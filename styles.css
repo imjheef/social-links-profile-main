@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --active-color: hsl(75, 94%, 57%);
+    --secondary-color: hsl(85, 90%, 87%);
+    
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    color: var(--white);
+    background-color: var(--grey-900);
+}
+
+.card{
+    margin: auto;
+    width: 350px;
+    min-width: 200px;
+    max-width: 450px;
+    border-radius: 16px;
+    padding: 2rem;
+    background-color: var(--grey-800);
+}
+
+
+.profile-img {
+    /* padding: 8px; */
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 12px auto;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.profile-info .location{
+    font-weight: bold;
+    color: var(--active-color);
+}
+
+.profile-info .description{
+    font-size: 0.8rem;
+    margin: 18px 0;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 12px 0;
+    background-color: var(--grey-800);
+}
+
+.social-links button{
+    display: flex;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 0 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border-style: none;
+    background-color: var(--grey-700);
+    color: var(--white);
+}
+
+.social-links button:hover,button:active{
+    background-color: var(--active-color);
+    color: var(--grey-900);
+}
+
+footer{
+    padding: 22px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a{
+    color: var(--secondary-color);
+}
+
+.attribution a:hover { 
+    color: var(--active-color); 
+}
+
+
+
+
